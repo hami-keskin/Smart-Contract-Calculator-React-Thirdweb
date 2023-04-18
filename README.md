@@ -1,45 +1,48 @@
-# Smart Contract Calculator with React and ThirdWeb
+# Smart Contract Calculator with React and Thirdweb
 
-This is a simple calculator that interacts with an Ethereum smart contract using ThirdWeb, a React library for interacting with Ethereum and other Web3-based blockchains. 
-
-The calculator contract performs basic arithmetic operations such as addition, subtraction, multiplication, and division. Users can input two numbers and select the operation to perform, and the contract will return the result.
+This is a simple calculator built with React and Thirdweb, which allows users to perform basic arithmetic operations using a smart contract deployed on the Sepolia network.
 
 ## Getting Started
 
-To get started with this project, follow these steps:
+### Prerequisites
 
-1. Clone this repository to your local machine.
-2. Install the project dependencies by running `npm install`.
-3. Start the development server by running `npm start`.
-4. Connect your Ethereum wallet to the ThirdWeb provider by clicking on the "Connect Wallet" button.
-5. Input two numbers and select an operation to perform.
+To run this project, you will need to have Node.js and npm installed on your computer.
 
-## Usage
+### Installation
 
-This calculator allows you to perform the following operations:
+1. Clone the repository:
 
-- Addition (+)
-- Subtraction (-)
-- Multiplication (*)
-- Division (/)
+git clone https://github.com/[YOUR_USERNAME]/smart-contract-calculator.git
 
-To perform an operation, input two numbers and select the operation from the buttons below. Then, click the corresponding button to trigger a transaction on the Ethereum network. Once the transaction has been confirmed, the result will be displayed below.
 
-## Smart Contract
+2. Install dependencies:
 
-The smart contract for this calculator can be found in the `contracts` directory. It is a basic Solidity contract that performs the arithmetic operations and returns the result.
+npm install
 
-## Technologies Used
 
-- React
-- ThirdWeb
-- Ethereum
-- Solidity
+3. Start the development server:
 
-## Contributing
+npm start
 
-Contributions are welcome! If you find a bug or would like to suggest an improvement, please open an issue or submit a pull request.
 
-## License
+4. Open your browser and navigate to `http://localhost:3000`.
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+### Usage
+
+1. Connect your wallet to the Sepolia network using the "Connect Wallet" button.
+2. Enter the first number in the first input field.
+3. Enter the second number in the second input field.
+4. Click one of the four buttons to perform the corresponding operation (addition, subtraction, multiplication, or division).
+5. Wait for the result to be displayed.
+
+### Demo
+
+You can try out the calculator on this demo page: [https://smart-contract-calculator.netlify.app/](https://smart-contract-calculator.netlify.app/)
+
+### Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
