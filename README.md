@@ -1,57 +1,45 @@
-Smart Contract Calculator with React and Thirdweb
-This project is a simple calculator built using React and Ethereum smart contracts. It allows users to perform basic arithmetic operations (addition, subtraction, multiplication, and division) on two input numbers.
+# Smart Contract Calculator with React and ThirdWeb
 
-Requirements
-To run this project, you will need:
+This is a simple calculator that interacts with an Ethereum smart contract using ThirdWeb, a React library for interacting with Ethereum and other Web3-based blockchains. 
 
-Node.js (v14 or later)
-MetaMask browser extension
-An Ethereum wallet with some testnet ETH (e.g. Rinkeby)
-Installation
-Clone this repository:
+The calculator contract performs basic arithmetic operations such as addition, subtraction, multiplication, and division. Users can input two numbers and select the operation to perform, and the contract will return the result.
 
-bash
-Copy code
-git clone https://github.com/yourusername/smart-contract-calculator.git
-Navigate to the project directory:
+## Getting Started
 
-bash
-Copy code
-cd smart-contract-calculator
-Install the dependencies:
+To get started with this project, follow these steps:
 
-Copy code
-npm install
-Start the development server:
+1. Clone this repository to your local machine.
+2. Install the project dependencies by running `npm install`.
+3. Start the development server by running `npm start`.
+4. Connect your Ethereum wallet to the ThirdWeb provider by clicking on the "Connect Wallet" button.
+5. Input two numbers and select an operation to perform.
 
-sql
-Copy code
-npm start
-Open the application in your browser at http://localhost:3000.
+## Usage
 
-Usage
-Connect your MetaMask wallet to the Rinkeby testnet.
+This calculator allows you to perform the following operations:
 
-Enter two numbers in the input fields.
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)
+- Division (/)
 
-Click one of the four buttons to perform an arithmetic operation on the numbers.
+To perform an operation, input two numbers and select the operation from the buttons below. Then, click the corresponding button to trigger a transaction on the Ethereum network. Once the transaction has been confirmed, the result will be displayed below.
 
-The result of the operation will be displayed on the screen.
+## Smart Contract
 
-Smart Contract
-The smart contract used in this project is a simple calculator that can perform addition, subtraction, multiplication, and division operations. It takes two input parameters and returns the result of the operation.
+The smart contract for this calculator can be found in the `contracts` directory. It is a basic Solidity contract that performs the arithmetic operations and returns the result.
 
-Future Improvements
-Add support for more advanced arithmetic operations (e.g. exponents, roots).
-Improve the user interface to make it more intuitive and user-friendly.
-Add error handling for cases where the user inputs invalid values or the smart contract call fails.
-Credits
-This project was built using the following technologies:
+## Technologies Used
 
-React
-Thirdweb
-Solidity
-Truffle
-Ganache
-License
-This project is licensed under the MIT License.
+- React
+- ThirdWeb
+- Ethereum
+- Solidity
+
+## Contributing
+
+Contributions are welcome! If you find a bug or would like to suggest an improvement, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
