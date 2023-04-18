@@ -19,7 +19,7 @@ An Ethereum wallet with some testnet ETH (e.g. Sepolia)
 git clone https://github.com/hami-keskin/Smart-Contract-Calculator-React-Thirdweb.git
 
 
-2.Navigate to the project directory:
+2. Navigate to the project directory:
 
 cd thirdweb-app
 
