@@ -1,6 +1,6 @@
 # Smart Contract Calculator with React and Thirdweb
 
-This is a simple calculator built with React and Thirdweb, which allows users to perform basic arithmetic operations using a smart contract deployed on the Sepolia network.
+This is a simple calculator built with React and Sepolia, which allows users to perform basic arithmetic operations using a smart contract deployed on the Sepolia network.
 
 ## Getting Started
 
