@@ -13,10 +13,8 @@ import "./styles/Home.css";
 export default function Home() {
   return (
     <ThirdwebProvider activeChain={Sepolia}>
-      <div className="container">
-        <ConnectWallet />
-        <Component />
-      </div>
+      <ConnectWallet />
+      <Component />
     </ThirdwebProvider>
   );
 }
@@ -44,10 +42,10 @@ function Component() {
         : sub;
 
     try {
-      const result = await op({ args: [a, b] });
-      console.info("Contract call successful", result);
+      const data = await op({ args: [a, b] });
+      console.info("contract call successs", data);
     } catch (err) {
-      console.error("Contract call failed", err);
+      console.error("contract call failure", err);
     }
   };
 
@@ -67,12 +65,10 @@ function Component() {
           setValues((prevState) => ({ ...prevState, b: e.target.value }))
         }
       />
-      <div className="button-container">
-        <button onClick={() => handleClick("add")}>Add</button>
-        <button onClick={() => handleClick("div")}>Div</button>
-        <button onClick={() => handleClick("mul")}>Mul</button>
-        <button onClick={() => handleClick("sub")}>Sub</button>
-      </div>
+      <button onClick={() => handleClick("add")}>Add</button>
+      <button onClick={() => handleClick("div")}>Div</button>
+      <button onClick={() => handleClick("mul")}>Mul</button>
+      <button onClick={() => handleClick("sub")}>Sub</button>
       {isLoading ? (
         <p>Loading...</p>
       ) : (
