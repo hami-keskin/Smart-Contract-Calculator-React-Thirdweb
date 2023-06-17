@@ -51,35 +51,35 @@ function Component() {
 
   return (
     <div class="main">
-  <div class="input-container">
-    <input
-      type="number"
-      value={values.a}
-      onChange={(e) =>
-        setValues((prevState) => ({ ...prevState, a: e.target.value }))
-      }
-    />
-    <input
-      type="number"
-      value={values.b}
-      onChange={(e) =>
-        setValues((prevState) => ({ ...prevState, b: e.target.value }))
-      }
-    />
-  </div>
-  <div class="button-container">
-    <button onClick={() => handleClick("add")}>Add</button>
-    <button onClick={() => handleClick("div")}>Div</button>
-    <button onClick={() => handleClick("mul")}>Mul</button>
-    <button onClick={() => handleClick("sub")}>Sub</button>
-  </div>
-  <div class="result-container">
-    {isLoading ? (
-      <p>Loading...</p>
-    ) : (
-      <p>Result: {data ? data.toString() : "N/A"}</p>
-    )}
-  </div>
-</div>
+      <div class="input-container">
+        <input
+          type="number"
+          value={values.a}
+          onChange={(e) =>
+            setValues((prevState) => ({ ...prevState, a: e.target.value }))
+          }
+        />
+        <input
+          type="number"
+          value={values.b}
+          onChange={(e) =>
+            setValues((prevState) => ({ ...prevState, b: e.target.value }))
+          }
+        />
+      </div>
+      <div class="button-container">
+        <button onClick={() => handleClick("add")}>Add</button>
+        <button onClick={() => handleClick("div")}>Div</button>
+        <button onClick={() => handleClick("mul")}>Mul</button>
+        <button onClick={() => handleClick("sub")}>Sub</button>
+      </div>
+      <div class="result-container">
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : (
+          <p>Result: {data ? data.toString() : "N/A"}</p>
+        )}
+      </div>
+    </div>
   );
 }

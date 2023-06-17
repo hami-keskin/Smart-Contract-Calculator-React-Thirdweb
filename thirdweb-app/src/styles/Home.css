@@ -19,6 +19,8 @@
 
 .input-container input {
   margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
 }
 
 .button-container {
@@ -29,12 +31,13 @@
 
 .button-container button {
   margin: 0 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
 }
 
 .result-container {
   text-align: center;
 }
-
 
 .title a {
   color: #f213a4;
